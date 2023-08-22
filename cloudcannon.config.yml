@@ -55,7 +55,20 @@ collections_config:
     disable_add: false
     disable_add_folder: false
     disable_file_actions: false
-collections_config_override: true
+  config _config.yml:
+    path: config _config.yml
+    output: true
+    parse_branch_index: true
+    icon: notes
+    _editables: {}
+    _inputs: {}
+    _select_data: {}
+    _structures: {}
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+    schemas: {}
+collections_config_override: false
 collection_groups:
   - heading: Content
     collections:
@@ -69,6 +82,10 @@ collection_groups:
   - heading: Settings
     collections:
       - data
+_enabled_editors:
+  - content
+  - data
+  - visual
 _inputs:
   categories:
     type: multiselect
@@ -86,5 +103,10 @@ _select_data: {}
 _structures: {}
 _editables: {}
 data_config: {}
-editor: {}
+editor:
+  default_path: config _config.yml
+source_editor:
+  tab_size: 2
+  theme: monokai
+  show_gutter: true
 timezone: Etc/UTC
