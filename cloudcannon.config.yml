@@ -55,6 +55,7 @@ collections_config:
     disable_add: false
     disable_add_folder: false
     disable_file_actions: false
+collections_config_override: true
 collection_groups:
   - heading: Content
     collections:
